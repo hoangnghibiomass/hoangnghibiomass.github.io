@@ -56,9 +56,27 @@ const searchDialog=$('#search-dialog');const sections=[['Giới thiệu Hoàng N
 function normalize(text){return text.normalize('NFD').replace(/[\u0300-\u036f]/g,'').replace(/đ/g,'d').toLowerCase();}
 function renderSearch(){const q=normalize($('#site-search').value.trim());const results=sections.filter(([text])=>normalize(text).includes(q));const container=$('#search-results');container.replaceChildren();for(const [text,href] of results){const link=document.createElement('a');link.textContent=text;link.href=href;link.addEventListener('click',()=>searchDialog.close());container.append(link);}if(!results.length){const p=document.createElement('p');p.textContent='Chưa có nội dung phù hợp. Bạn có thể tìm “trấu” hoặc “liên hệ”.';container.append(p);}}
 $('.search-open').addEventListener('click',()=>{searchDialog.showModal();renderSearch();$('#site-search').focus();});$('#site-search').addEventListener('input',renderSearch);
-// Chỉ nhận metadata của ba nguồn được cố định trên máy chủ, không tải bài gốc về trình duyệt.
-async function loadNewsLinks(){const cards=[...document.querySelectorAll('[data-news-source]')];try{const response=await fetch('./news.json',{cache:'no-store'});if(!response.ok)throw Error('News unavailable');const data=await response.json();if(!Array.isArray(data.links))throw Error('Invalid links');const hosts=['nangluongvietnam.vn','congthuong.vn','baochinhphu.vn'];data.links.slice(0,3).forEach((item,index)=>{const card=cards[index];if(!card)return;const url=new URL(item.url);if(url.protocol!=='https:'||!(url.hostname===hosts[index]||url.hostname.endsWith('.'+hosts[index])))return;const headline=card.querySelector('.source-headline');headline.textContent=String(item.title).slice(0,240);headline.href=url.href;card.querySelector('.source-read').href=url.href;card.querySelector('.source-home').href=url.href;if(item.imageUrl){const image=new URL(item.imageUrl);if(image.protocol==='https:'){const img=card.querySelector('img');img.src=image.href;img.alt=item.title;img.referrerPolicy='no-referrer';}}});}catch{/* Keep the linked article cards available when the news endpoint is temporarily unavailable. */}}
+// Only link metadata is loaded; article text stays on the original news websites.
+async function loadNewsLinks(){
+ try{
+  const response=await fetch('./news.json',{cache:'no-store'});if(!response.ok)throw Error('News unavailable');
+  const data=await response.json();if(!Array.isArray(data.links)||data.links.length!==5)return;
+  const hosts=['nangluongvietnam.vn','congthuong.vn','baochinhphu.vn','tuoitre.vn','vietnamplus.vn','thanhnien.vn','baodautu.vn','vnexpress.net','vov.vn','moit.gov.vn'];
+  const grid=document.querySelector('#tin-tuc .news-grid');const template=grid.querySelector('article');
+  const fragment=document.createDocumentFragment();const used=new Set();
+  for(const item of data.links){
+   const url=new URL(item.url);if(url.protocol!=='https:'||!hosts.some(h=>url.hostname===h||url.hostname.endsWith('.'+h))||used.has(item.source))return;used.add(item.source);
+   const card=template.cloneNode(true);card.dataset.newsSource=item.source;
+   const title=String(item.title).slice(0,240);card.querySelector('.source-meta h3 a').textContent=String(item.name).slice(0,80);
+   for(const link of card.querySelectorAll('a'))link.href=url.href;
+   card.querySelector('.source-headline').textContent=title;
+   card.querySelector('.source-home').setAttribute('aria-label',title);
+   card.querySelector('.source-topic').textContent='Sinh khối & nguyên liệu';
+   const img=card.querySelector('img');img.alt=title;img.hidden=true;
+   if(item.imageUrl){const image=new URL(item.imageUrl);if(image.protocol==='https:'){img.src=image.href;img.hidden=false;img.referrerPolicy='no-referrer';img.onerror=()=>{img.hidden=true;};}}
+   fragment.append(card);
+  }
+  grid.replaceChildren(fragment);
+ }catch{/* Keep the five linked fallback cards when metadata is temporarily unavailable. */}
+}
 loadNewsLinks();
-
-
-
