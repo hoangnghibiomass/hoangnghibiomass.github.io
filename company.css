@@ -37,3 +37,10 @@
 .source-meta .more{font-size:11px;gap:12px;padding-top:14px}.source-meta .plus{width:32px;height:32px;font-size:20px}.source-meta .source-read{margin-top:0}
 .footer-grid>div:first-child>h3{margin-bottom:22px}.footer-grid>div:first-child .footer-logo{margin:0 0 24px;width:165px}
 @media(max-width:760px){.hero-tabs button{padding:12px 10px;font-size:13px}.source-meta .more{font-size:11px;gap:12px}.source-meta .plus{width:30px;height:30px;font-size:19px}.footer-grid>div:first-child .footer-logo{width:150px}}
+
+/* Five news sources: readable rows on desktop, stacked on mobile. */
+#tin-tuc .news-grid{grid-template-columns:repeat(6,minmax(0,1fr));gap:40px 30px}
+#tin-tuc .news-grid>article{grid-column:span 2;min-width:0}
+#tin-tuc .news-grid>article:nth-child(4){grid-column:2/span 2}
+#tin-tuc .news-grid>article:nth-child(5){grid-column:4/span 2}
+@media(max-width:760px){#tin-tuc .news-grid{grid-template-columns:1fr;gap:40px}#tin-tuc .news-grid>article,#tin-tuc .news-grid>article:nth-child(4),#tin-tuc .news-grid>article:nth-child(5){grid-column:auto}}
