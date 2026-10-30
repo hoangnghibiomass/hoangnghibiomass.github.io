@@ -1,14 +1,14 @@
 {
   "timezone": "Asia/Ho_Chi_Minh",
   "policy": "links_only",
-  "checkedAt": "2026-10-30T03:16:45.318Z",
+  "checkedAt": "2026-10-30T03:17:12.346Z",
   "sources": [
     {
       "id": "nang-luong-viet-nam",
       "name": "Năng lượng Việt Nam",
       "url": "https://nangluongvietnam.vn/tag/dien-sinh-khoi-629.tag",
       "host": "nangluongvietnam.vn",
-      "attemptedAt": "2026-10-30T03:16:45.318Z",
+      "attemptedAt": "2026-10-30T03:17:12.346Z",
       "status": "ok",
       "found": 4
     },
@@ -17,7 +17,7 @@
       "name": "Báo Công Thương",
       "url": "https://congthuong.vn/chu-de/dien-sinh-khoi.topic",
       "host": "congthuong.vn",
-      "attemptedAt": "2026-10-30T03:16:45.318Z",
+      "attemptedAt": "2026-10-30T03:17:12.346Z",
       "status": "ok",
       "found": 4
     },
@@ -26,7 +26,7 @@
       "name": "Báo Điện tử Chính phủ",
       "url": "https://baochinhphu.vn/tim-kiem.htm?keywords=sinh%20kh%E1%BB%91i",
       "host": "baochinhphu.vn",
-      "attemptedAt": "2026-10-30T03:16:45.318Z",
+      "attemptedAt": "2026-10-30T03:17:12.346Z",
       "status": "ok",
       "found": 4
     },
@@ -35,7 +35,7 @@
       "name": "Tuổi Trẻ",
       "url": "https://tuoitre.vn/sinh-khoi.html",
       "host": "tuoitre.vn",
-      "attemptedAt": "2026-10-30T03:16:45.318Z",
+      "attemptedAt": "2026-10-30T03:17:12.346Z",
       "status": "ok",
       "found": 1
     },
@@ -44,7 +44,7 @@
       "name": "VietnamPlus",
       "url": "https://www.vietnamplus.vn/tag/nang-luong-sinh-khoi-tag112721.vnp",
       "host": "vietnamplus.vn",
-      "attemptedAt": "2026-10-30T03:16:45.318Z",
+      "attemptedAt": "2026-10-30T03:17:12.346Z",
       "status": "ok",
       "found": 1
     },
@@ -53,7 +53,7 @@
       "name": "Thanh Niên",
       "url": "https://thanhnien.vn/sinh-khoi.html",
       "host": "thanhnien.vn",
-      "attemptedAt": "2026-10-30T03:16:45.318Z",
+      "attemptedAt": "2026-10-30T03:17:12.346Z",
       "status": "ok",
       "found": 2
     },
@@ -62,7 +62,7 @@
       "name": "Báo Đầu tư",
       "url": "https://baodautu.vn/tag/dien-sinh-khoi/",
       "host": "baodautu.vn",
-      "attemptedAt": "2026-10-30T03:16:45.318Z",
+      "attemptedAt": "2026-10-30T03:17:12.346Z",
       "status": "ok",
       "found": 4
     },
@@ -71,7 +71,7 @@
       "name": "VnExpress",
       "url": "https://vnexpress.net/rss/kinh-doanh.rss",
       "host": "vnexpress.net",
-      "attemptedAt": "2026-10-30T03:16:45.318Z",
+      "attemptedAt": "2026-10-30T03:17:12.346Z",
       "status": "ok",
       "found": 1
     },
@@ -80,7 +80,7 @@
       "name": "VOV",
       "url": "https://vov.vn/kinh-te",
       "host": "vov.vn",
-      "attemptedAt": "2026-10-30T03:16:45.318Z",
+      "attemptedAt": "2026-10-30T03:17:12.346Z",
       "status": "ok",
       "found": 1
     },
@@ -89,9 +89,9 @@
       "name": "Bộ Công Thương",
       "url": "https://moit.gov.vn/tin-tuc/phat-trien-nang-luong",
       "host": "moit.gov.vn",
-      "attemptedAt": "2026-10-30T03:16:45.318Z",
-      "status": "ok",
-      "found": 1
+      "attemptedAt": "2026-10-30T03:17:12.346Z",
+      "status": "source_unavailable",
+      "found": 0
     }
   ],
   "candidates": [
@@ -103,7 +103,7 @@
       "imageUrl": "https://nangluongvietnam.vn/stores/news_dataimages/2026/082026/19/07/in_social/1-n-0220260819073350.jpg?randTime=1793329873",
       "publishedAt": "2026-08-19T00:37:44.000Z",
       "discoveredAt": "2026-08-19T00:37:44.000Z",
-      "checkedAt": "2026-10-30T03:16:45.318Z"
+      "checkedAt": "2026-10-30T03:17:12.346Z"
     },
     {
       "source": "nang-luong-viet-nam",
@@ -113,7 +113,7 @@
       "imageUrl": "https://nangluongvietnam.vn/stores/news_dataimages/2026/042026/16/09/in_social/z7730403105155-0431e10963973aad04b7bdbea6b7c79720260416093019.jpg?randTime=1793329873",
       "publishedAt": "2026-04-16T02:36:11.000Z",
       "discoveredAt": "2026-04-16T02:36:11.000Z",
-      "checkedAt": "2026-10-30T03:16:45.318Z"
+      "checkedAt": "2026-10-30T03:17:12.346Z"
     },
     {
       "source": "nang-luong-viet-nam",
@@ -123,7 +123,7 @@
       "imageUrl": "https://nangluongvietnam.vn/stores/news_dataimages/2026/032026/19/07/in_social/yb1-120260319072036.jpg?randTime=1793329873",
       "publishedAt": "2026-03-19T00:24:18.000Z",
       "discoveredAt": "2026-03-19T00:24:18.000Z",
-      "checkedAt": "2026-10-30T03:16:45.318Z"
+      "checkedAt": "2026-10-30T03:17:12.346Z"
     },
     {
       "source": "nang-luong-viet-nam",
@@ -133,7 +133,7 @@
       "imageUrl": "https://nangluongvietnam.vn/stores/news_dataimages/2025/122025/19/11/in_social/597381814-1424575699679386-8809424116552021288-n20251219113354.jpg?randTime=1793329873",
       "publishedAt": "2025-12-19T04:46:31.000Z",
       "discoveredAt": "2025-12-19T04:46:31.000Z",
-      "checkedAt": "2026-10-30T03:16:45.318Z"
+      "checkedAt": "2026-10-30T03:17:12.346Z"
     },
     {
       "source": "bao-cong-thuong",
@@ -143,7 +143,7 @@
       "imageUrl": "https://cdn-i2.congthuong.vn/resize/I_FIpr7L-eZcFNVAMJ9OSg2/upload/2025/11/03/cee0f5fafca570fb29b4-12204436.jpg",
       "publishedAt": "2025-11-03T12:44:00.000Z",
       "discoveredAt": "2025-11-03T12:44:00.000Z",
-      "checkedAt": "2026-10-30T03:16:45.318Z"
+      "checkedAt": "2026-10-30T03:17:12.346Z"
     },
     {
       "source": "bao-cong-thuong",
@@ -153,7 +153,7 @@
       "imageUrl": null,
       "publishedAt": "2023-09-21T10:07:56.000Z",
       "discoveredAt": "2023-09-21T10:07:56.000Z",
-      "checkedAt": "2026-10-30T03:16:45.318Z"
+      "checkedAt": "2026-10-30T03:17:12.346Z"
     },
     {
       "source": "bao-cong-thuong",
@@ -163,7 +163,7 @@
       "imageUrl": null,
       "publishedAt": "2023-09-12T09:33:51.000Z",
       "discoveredAt": "2023-09-12T09:33:51.000Z",
-      "checkedAt": "2026-10-30T03:16:45.318Z"
+      "checkedAt": "2026-10-30T03:17:12.346Z"
     },
     {
       "source": "bao-cong-thuong",
@@ -173,7 +173,7 @@
       "imageUrl": null,
       "publishedAt": "2022-09-01T22:04:46.000Z",
       "discoveredAt": "2022-09-01T22:04:46.000Z",
-      "checkedAt": "2026-10-30T03:16:45.318Z"
+      "checkedAt": "2026-10-30T03:17:12.346Z"
     },
     {
       "source": "bao-chinh-phu",
@@ -183,7 +183,7 @@
       "imageUrl": "https://bcp2.cdnchinhphu.vn/zoom/1200_630/334894974524682240/2025/11/19/5j4a0267-17635291628021057655275-0-0-1250-2000-crop-17635292057432138539751.jpg",
       "publishedAt": "2025-11-19T07:27:00.000Z",
       "discoveredAt": "2025-11-19T07:27:00.000Z",
-      "checkedAt": "2026-10-30T03:16:45.318Z"
+      "checkedAt": "2026-10-30T03:17:12.346Z"
     },
     {
       "source": "bao-chinh-phu",
@@ -193,7 +193,7 @@
       "imageUrl": "https://bcp2.cdnchinhphu.vn/zoom/1200_630/334894974524682240/2025/7/4/9b82c0f4-14d7-477d-b810-b394a587c4ef-1751617241495473407790-250-0-1500-2000-crop-1751617317313358424571.jpg",
       "publishedAt": "2025-07-04T08:30:00.000Z",
       "discoveredAt": "2025-07-04T08:30:00.000Z",
-      "checkedAt": "2026-10-30T03:16:45.318Z"
+      "checkedAt": "2026-10-30T03:17:12.346Z"
     },
     {
       "source": "bao-chinh-phu",
@@ -203,7 +203,7 @@
       "imageUrl": "https://bcp2.cdnchinhphu.vn/zoom/1200_630/334894974524682240/2024/10/18/evn-17292418421531084284962-29-0-498-750-crop-17292419288981351506835.jpg",
       "publishedAt": "2024-10-18T11:29:00.000Z",
       "discoveredAt": "2024-10-18T11:29:00.000Z",
-      "checkedAt": "2026-10-30T03:16:45.318Z"
+      "checkedAt": "2026-10-30T03:17:12.346Z"
     },
     {
       "source": "bao-chinh-phu",
@@ -213,7 +213,7 @@
       "imageUrl": "https://bcp2.cdnchinhphu.vn/zoom/1200_630/334894974524682240/2024/3/25/1-4-17113647052171306438374-74-0-1324-2000-crop-17113647948101543326883.jpg",
       "publishedAt": "2024-03-25T11:48:00.000Z",
       "discoveredAt": "2024-03-25T11:48:00.000Z",
-      "checkedAt": "2026-10-30T03:16:45.318Z"
+      "checkedAt": "2026-10-30T03:17:12.346Z"
     },
     {
       "source": "tuoi-tre",
@@ -223,7 +223,7 @@
       "imageUrl": "https://static-tuoitre.tuoitre.vn/tuoitre/web_images/tto_default_avatar.png",
       "publishedAt": "2013-07-24T09:22:00.000Z",
       "discoveredAt": "2013-07-24T09:22:00.000Z",
-      "checkedAt": "2026-10-30T03:16:45.318Z"
+      "checkedAt": "2026-10-30T03:17:12.346Z"
     },
     {
       "source": "vietnamplus",
@@ -233,7 +233,7 @@
       "imageUrl": "https://media.vietnamplus.vn/assets/web/styles/img/social-share.jpg",
       "publishedAt": "2010-02-14T13:49:00.000Z",
       "discoveredAt": "2010-02-14T13:49:00.000Z",
-      "checkedAt": "2026-10-30T03:16:45.318Z"
+      "checkedAt": "2026-10-30T03:17:12.346Z"
     },
     {
       "source": "thanh-nien",
@@ -243,7 +243,7 @@
       "imageUrl": "https://images2.thanhnien.vn/zoom/1200_630/Uploaded/xuanvu/2022_02_21/anh-1-7240.jpeg",
       "publishedAt": "2022-02-21T11:44:32.000Z",
       "discoveredAt": "2022-02-21T11:44:32.000Z",
-      "checkedAt": "2026-10-30T03:16:45.318Z"
+      "checkedAt": "2026-10-30T03:17:12.346Z"
     },
     {
       "source": "thanh-nien",
@@ -253,7 +253,7 @@
       "imageUrl": "https://images2.thanhnien.vn/zoom/1200_630/Uploaded/anhdh/2021_12_29/anh-1-nguoi-nong-dan-thu-nhap-on-dinh-tu-rom-4338.jpg",
       "publishedAt": "2021-12-29T10:30:34.000Z",
       "discoveredAt": "2021-12-29T10:30:34.000Z",
-      "checkedAt": "2026-10-30T03:16:45.318Z"
+      "checkedAt": "2026-10-30T03:17:12.346Z"
     },
     {
       "source": "bao-dau-tu",
@@ -263,7 +263,7 @@
       "imageUrl": "https://media.baodautu.vn/thumb_x470x250/Images/haiyen/2023/03/21/doanh-nghiep-nhat-ban-dau-tu-nhieu-du-an-dien-sinh-khoi-tai-viet-nam1679383112.jpg",
       "publishedAt": null,
       "discoveredAt": "2000-01-01T00:00:00.000Z",
-      "checkedAt": "2026-10-30T03:16:45.318Z"
+      "checkedAt": "2026-10-30T03:17:12.346Z"
     },
     {
       "source": "bao-dau-tu",
@@ -273,7 +273,7 @@
       "imageUrl": "https://media.baodautu.vn/thumb_x470x250/Images/phuoctin/2022/10/20/lam-dong-chua-the-hinh-thanh-du-an-dien-rac-va-dien-sinh-khoi-vi-sao1666239725.jpg",
       "publishedAt": null,
       "discoveredAt": "2000-01-01T00:00:00.000Z",
-      "checkedAt": "2026-10-30T03:16:45.318Z"
+      "checkedAt": "2026-10-30T03:17:12.346Z"
     },
     {
       "source": "bao-dau-tu",
@@ -283,7 +283,7 @@
       "imageUrl": "https://media.baodautu.vn/thumb_x470x250/Images/thanhhuong/2024/06/01/tt-group-va-erex-hop-tac-phat-trien-dien-sinh-khoi-tai-an-giang1717240017.jpeg",
       "publishedAt": null,
       "discoveredAt": "2000-01-01T00:00:00.000Z",
-      "checkedAt": "2026-10-30T03:16:45.318Z"
+      "checkedAt": "2026-10-30T03:17:12.346Z"
     },
     {
       "source": "bao-dau-tu",
@@ -293,7 +293,7 @@
       "imageUrl": "https://media.baodautu.vn/thumb_x470x250/Images/thanhha/2024/03/06/dong-tho-nha-may-nhien-lieu-sinh-khoi-erex-sakura-biomass-o-tuyen-quang1709717121.jpg",
       "publishedAt": null,
       "discoveredAt": "2000-01-01T00:00:00.000Z",
-      "checkedAt": "2026-10-30T03:16:45.318Z"
+      "checkedAt": "2026-10-30T03:17:12.346Z"
     },
     {
       "source": "vnexpress",
@@ -303,7 +303,7 @@
       "imageUrl": "https://vcdn1-kinhdoanh.vnecdn.net/2023/07/12/703-1689071680-7158-1689126148.png?w=1200&h=675&q=100&dpr=1&fit=crop&s=EklbqMo1wURx4VZmo8MS8A",
       "publishedAt": "2023-07-12T02:30:00.000Z",
       "discoveredAt": "2023-07-12T02:30:00.000Z",
-      "checkedAt": "2026-10-30T03:16:45.318Z"
+      "checkedAt": "2026-10-30T03:17:12.346Z"
     },
     {
       "source": "vov",
@@ -313,7 +313,7 @@
       "imageUrl": "https://media.vov.vn/sites/default/files/styles/og_image/public/2025-11/rom_duoc_nguoi_dan_thu_gom_khoi_dong_ruong_20251128083044.jpg?v=1793330163",
       "publishedAt": "2025-11-28T03:46:45.000Z",
       "discoveredAt": "2025-11-28T03:46:45.000Z",
-      "checkedAt": "2026-10-30T03:16:45.318Z"
+      "checkedAt": "2026-10-30T03:17:12.346Z"
     },
     {
       "source": "bo-cong-thuong",
@@ -335,7 +335,7 @@
       "imageUrl": "https://nangluongvietnam.vn/stores/news_dataimages/2026/082026/19/07/in_social/1-n-0220260819073350.jpg?randTime=1793329873",
       "publishedAt": "2026-08-19T00:37:44.000Z",
       "discoveredAt": "2026-08-19T00:37:44.000Z",
-      "checkedAt": "2026-10-30T03:16:45.318Z"
+      "checkedAt": "2026-10-30T03:17:12.346Z"
     },
     {
       "source": "vov",
@@ -345,7 +345,7 @@
       "imageUrl": "https://media.vov.vn/sites/default/files/styles/og_image/public/2025-11/rom_duoc_nguoi_dan_thu_gom_khoi_dong_ruong_20251128083044.jpg?v=1793330163",
       "publishedAt": "2025-11-28T03:46:45.000Z",
       "discoveredAt": "2025-11-28T03:46:45.000Z",
-      "checkedAt": "2026-10-30T03:16:45.318Z"
+      "checkedAt": "2026-10-30T03:17:12.346Z"
     },
     {
       "source": "bao-chinh-phu",
@@ -355,7 +355,7 @@
       "imageUrl": "https://bcp2.cdnchinhphu.vn/zoom/1200_630/334894974524682240/2025/11/19/5j4a0267-17635291628021057655275-0-0-1250-2000-crop-17635292057432138539751.jpg",
       "publishedAt": "2025-11-19T07:27:00.000Z",
       "discoveredAt": "2025-11-19T07:27:00.000Z",
-      "checkedAt": "2026-10-30T03:16:45.318Z"
+      "checkedAt": "2026-10-30T03:17:12.346Z"
     },
     {
       "source": "bao-cong-thuong",
@@ -365,7 +365,7 @@
       "imageUrl": "https://cdn-i2.congthuong.vn/resize/I_FIpr7L-eZcFNVAMJ9OSg2/upload/2025/11/03/cee0f5fafca570fb29b4-12204436.jpg",
       "publishedAt": "2025-11-03T12:44:00.000Z",
       "discoveredAt": "2025-11-03T12:44:00.000Z",
-      "checkedAt": "2026-10-30T03:16:45.318Z"
+      "checkedAt": "2026-10-30T03:17:12.346Z"
     },
     {
       "source": "vnexpress",
@@ -375,7 +375,7 @@
       "imageUrl": "https://vcdn1-kinhdoanh.vnecdn.net/2023/07/12/703-1689071680-7158-1689126148.png?w=1200&h=675&q=100&dpr=1&fit=crop&s=EklbqMo1wURx4VZmo8MS8A",
       "publishedAt": "2023-07-12T02:30:00.000Z",
       "discoveredAt": "2023-07-12T02:30:00.000Z",
-      "checkedAt": "2026-10-30T03:16:45.318Z"
+      "checkedAt": "2026-10-30T03:17:12.346Z"
     }
   ]
 }
