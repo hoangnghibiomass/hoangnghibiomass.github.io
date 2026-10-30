@@ -4,7 +4,7 @@ on:
     branches: [main]
   workflow_dispatch:
   schedule:
-    - cron: '0 0 * * *'
+    - cron: '0 0 1 * *'
 permissions:
   contents: write
   pages: write
@@ -26,8 +26,10 @@ jobs:
         with:
           node-version: '22'
       - name: Update Vietnamese news links
+        if: github.event_name == 'schedule' || github.event_name == 'workflow_dispatch'
         run: node scripts/update-news.mjs
       - name: Save latest link metadata
+        if: github.event_name == 'schedule' || github.event_name == 'workflow_dispatch'
         run: |
           if ! git diff --quiet -- news.json; then
             git config user.name 'github-actions[bot]'
