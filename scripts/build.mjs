@@ -1,4 +1,5 @@
 import fs from 'node:fs/promises';
+import {createHash} from 'node:crypto';
 await fs.mkdir('_site',{recursive:true});
 for(const name of ['company.css','company.js','news.json','.nojekyll'])await fs.copyFile(name,'_site/'+name);
 const data=JSON.parse(await fs.readFile('news.json','utf8'));
@@ -9,6 +10,7 @@ const cards=data.links.map(x=>`<article data-news-source="${escape(x.source)}"><
 let html=await fs.readFile('index.html','utf8');
 html=html.replace(/(<section[^>]*id="tin-tuc"[\s\S]*?<div class="news-grid"[^>]*>)[\s\S]*?(<\/div><\/div><\/section>)/,(_,start,end)=>start+cards+end);
 if((html.match(/data-news-source=/g)||[]).length!==5)throw Error('News layout not rendered');
+for(const asset of ['company.js','company.css']){const hash=createHash('sha256').update(await fs.readFile(asset)).digest('hex').slice(0,12);html=html.replaceAll(asset+'"',asset+'?v='+hash+'"');}
 await fs.writeFile('_site/index.html',html);
 await fs.cp('assets','_site/assets',{recursive:true});
 console.log('Static site ready in _site with five news cards');
