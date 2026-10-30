@@ -57,6 +57,7 @@ function normalize(text){return text.normalize('NFD').replace(/[\u0300-\u036f]/g
 function renderSearch(){const q=normalize($('#site-search').value.trim());const results=sections.filter(([text])=>normalize(text).includes(q));const container=$('#search-results');container.replaceChildren();for(const [text,href] of results){const link=document.createElement('a');link.textContent=text;link.href=href;link.addEventListener('click',()=>searchDialog.close());container.append(link);}if(!results.length){const p=document.createElement('p');p.textContent='Chưa có nội dung phù hợp. Bạn có thể tìm “trấu” hoặc “liên hệ”.';container.append(p);}}
 $('.search-open').addEventListener('click',()=>{searchDialog.showModal();renderSearch();$('#site-search').focus();});$('#site-search').addEventListener('input',renderSearch);
 // Only link metadata is loaded; article text stays on the original news websites.
+const newsTopics={"nang-luong-viet-nam": "Điện sinh khối & năng lượng", "bao-cong-thuong": "Thị trường & sản xuất", "bao-chinh-phu": "Sinh khối & nông nghiệp", "tuoi-tre": "Đời sống & môi trường", "vietnamplus": "Kinh tế xanh & phát triển", "thanh-nien": "Môi trường & cộng đồng", "bao-dau-tu": "Đầu tư & doanh nghiệp", "vnexpress": "Thị trường & công nghệ", "vov": "Nông nghiệp & môi trường", "bo-cong-thuong": "Chính sách & năng lượng"};
 async function loadNewsLinks(){
  try{
   const response=await fetch('./news.json',{cache:'no-store'});if(!response.ok)throw Error('News unavailable');
@@ -71,7 +72,7 @@ async function loadNewsLinks(){
    for(const link of card.querySelectorAll('a'))link.href=url.href;
    card.querySelector('.source-headline').textContent=title;
    card.querySelector('.source-home').setAttribute('aria-label',title);
-   card.querySelector('.source-topic').textContent='Sinh khối & nguyên liệu';
+   card.querySelector('.source-topic').textContent=newsTopics[item.source]||'Sinh khối & nguyên liệu';
    const img=card.querySelector('img');img.alt=title;img.hidden=true;
    if(item.imageUrl){const image=new URL(item.imageUrl);if(image.protocol==='https:'){img.src=image.href;img.hidden=false;img.referrerPolicy='no-referrer';img.onerror=()=>{img.hidden=true;};}}
    fragment.append(card);
